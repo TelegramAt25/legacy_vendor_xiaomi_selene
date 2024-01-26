@@ -6,7 +6,8 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libfmjni",
+	name: "libfmjni.system",
+	stem: "libfmjni",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -113,7 +114,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.wifi.hostapd",
+	name: "manifest_android.hardware.wifi.hostapd",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
 	filename_from_src: true,
